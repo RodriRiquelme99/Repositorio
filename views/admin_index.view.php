@@ -2,19 +2,21 @@
 
 <div class="contenedor">
     <h2>Panel de control</h2>
+    <a href="nuevo.php" class="btn">Nuevo Post</a>
+    <a href="cerrar.php" class="btn">Cerrar Sesion</a>
     <div class="post">
         <?php foreach ($posts as $post) : ?>
             <div class="post">
                 <article>
-                    <h2 class="titulo"></h2>
-                    <a href="#">Editar</a>
-                    <a href="#">Ver</a>
-                    <a href="#">Borrar</a>
+                    <h2 class="titulo"><?php echo $post['id'] . '.-' . $post['titulo']; ?></h2>
+                    <a href="editar.php?id=<?php echo $post['id']; ?>">Editar</a>
+                    <a href="../single.php?id=<?php echo $post['id']; ?>">Ver</a>
+                    <a href="borrar.php?id=<?php echo $post['id']; ?>">Borrar</a>
                 </article>
             </div>
         <?php endforeach; ?>
     </div>
-    <?php require '../views/footer.php';  ?>
+    <?php require '../views/paginacion.php';  ?>
 </div>
 
 <?php require 'footer.php';  ?>
