@@ -1,17 +1,14 @@
 <?php require 'header.php'; ?>
 
 <div class="contenedor">
-
     <div class="post">
         <article>
-            <h2 class="titulo">Titulo del articulo</h2>
-            <p class="fecha">14 abril 1999</p>
+            <h2 class="titulo"><?php echo $post['titulo']; ?></h2>
+            <p class="fecha"><?php echo fecha($post['fecha']); ?></p>
             <div class="thumb">
-
-                <img src="<?php echo RUTA; ?>/imagenes/1.png?>" alt="">
-
+                <img src="<?php echo RUTA; ?>/imagenes/<?php echo $post['thumb']; ?>" alt="<?php echo $post['titulo'] ?>">
             </div>
-            <p class="extracto">Lorem</p>
+            <p class="extracto"><?php echo nl2br($post['texto']);  ?></p>
         </article>
     </div>
 </div>

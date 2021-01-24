@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="<?php echo RUTA; ?>css/estilos.css">
+    <link rel="stylesheet" href="<?php echo RUTA; ?>/css/estilos.css">
     <title>Blog</title>
 </head>
 
 <body>
-    <header>
-        <div class="contenedor">
+    <header style="background: #1d3e53">
+        <div class="contenedor" >
             <div class="logo izquierda">
                 <p><a href="<?php echo RUTA; ?>">Mi primer blog</a></p>
             </div>
